@@ -2,191 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Lima - Data Engineer Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <main>
-        <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
-                <figure class="avatar-box">
-                    <img src="./assets/images/my-avatar.png" alt="Gustavo Lima" width="80">
-                </figure>
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer | UI/UX Designer</p>
+    </header>
 
-                <div class="info-content">
-                    <h1 class="name" title="Gustavo Lima">Gustavo Lima</h1>
-                    <p class="title">Data Engineer</p>
-                </div>
-
-                <button class="info_more-btn" data-sidebar-btn>
-                    <span>Show Contacts</span>
-                    <ion-icon name="chevron-down"></ion-icon>
-                </button>
-            </div>
-
-            <div class="sidebar-info_more">
-                <div class="separator"></div>
-                <ul class="contacts-list">
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-                            <a href="mailto:contact@example.com" class="contact-link">contact@example.com</a>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
-                            <address>Brazil</address>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="separator"></div>
-
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
-        <div class="main-content">
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <button class="navbar-link active" data-nav-link>About</button>
-                    </li>
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Resume</button>
-                    </li>
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Portfolio</button>
-                    </li>
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Blog</button>
-                    </li>
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Contact</button>
-                    </li>
-                </ul>
-            </nav>
-
-            <article class="about active" data-page="about">
-                <header>
-                    <h2 class="h2 article-title">About Me</h2>
-                </header>
-
-                <section class="about-text">
-                    <p>✨ Turning data into insights.</p>
-                    <p>📚 Currently learning advanced GCP services and pursuing Fabric certification.</p>
-                    <p>🎯 Goals: Master real-time data solutions and expand my expertise in data engineering.</p>
-                    <p>🎲 Fun fact: I love optimizing complex SQL queries!</p>
-                </section>
-
-                <section class="service">
-                    <h3 class="h3 service-title">What I Do</h3>
-                    <ul class="service-list">
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="./assets/images/icon-design.svg" alt="data pipeline icon" width="40">
-                            </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Data Orchestration</h4>
-                                <p class="service-item-text">
-                                    Expertise in Fabric and Azure Data Factory for efficient data workflows
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="./assets/images/icon-dev.svg" alt="cloud icon" width="40">
-                            </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Cloud Solutions</h4>
-                                <p class="service-item-text">
-                                    Specialized in GCP and BigQuery for scalable data solutions
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="./assets/images/icon-app.svg" alt="database icon" width="40">
-                            </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Database Management</h4>
-                                <p class="service-item-text">
-                                    Expert in Oracle SQL and PL/SQL optimization
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img src="./assets/images/icon-photo.svg" alt="automation icon" width="40">
-                            </div>
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Automation</h4>
-                                <p class="service-item-text">
-                                    Python-based automation solutions and API integrations
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="testimonials">
-                    <h3 class="h3 testimonials-title">Testimonials</h3>
-                    <!-- Original testimonials section content -->
-                </section>
-
-                <section class="clients">
-                    <h3 class="h3 clients-title">Clients</h3>
-                    <!-- Original clients section content -->
-                </section>
-            </article>
-
-            <!-- Keep all original article sections -->
-            <article class="resume" data-page="resume">
-                <!-- Original resume content -->
-            </article>
-
-            <article class="portfolio" data-page="portfolio">
-                <!-- Original portfolio content -->
-            </article>
-
-            <article class="blog" data-page="blog">
-                <!-- Original blog content -->
-            </article>
-
-            <article class="contact" data-page="contact">
-                <!-- Original contact content -->
-            </article>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Creative Director and UI/UX Designer from Sydney, Australia...</p>
+        <div class="skills">
+            <h3>My Skills</h3>
+            <ul>
+                <li>Web Design - 80%</li>
+                <li>Graphic Design - 70%</li>
+                <li>Branding - 90%</li>
+                <li>WordPress - 50%</li>
+            </ul>
         </div>
-    </main>
+    </section>
 
-    <script src="./assets/js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <section id="services">
+        <h2>What I Offer</h2>
+        <ul>
+            <li><strong>Web Design</strong> - Modern and high-quality design.</li>
+            <li><strong>Web Development</strong> - Professional site development.</li>
+            <li><strong>Mobile Apps</strong> - Development for iOS and Android.</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="projects">
+            <!-- Project items here -->
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Clients Say</h2>
+        <!-- Testimonials here -->
+    </section>
+
+    <footer>
+        <h2>Contact Me</h2>
+        <!-- Contact form here -->
+    </footer>
+
 </body>
 </html>
