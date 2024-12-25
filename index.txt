@@ -2,20 +2,19 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
+alt = Gustavo Lima
+Gustavo Ferreira Lima
 Web developer
 
 Show Contacts
 
 Email
-richard@example.com
-
+adm.gustavo.lima@live.com
 Phone
-+1 (213) 352-2795
++55 (19) 995477044
 
 Birthday
-June 23, 1982
+July 17, 1998
 
 Location
 Sacramento, California, USA
