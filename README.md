@@ -1,116 +1,44 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Engenheiro de Dados</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
+# vCard - Personal portfolio
 
-        header {
-            background-color: #0077b6;
-            color: #fff;
-            padding: 1.5rem 0;
-            text-align: center;
-        }
+![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
+![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
+[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
 
-        header p {
-            margin: 0.5rem 0 0;
-            font-size: 1.2rem;
-        }
+## Demo
 
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
+![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
+![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
 
-        section {
-            margin-bottom: 2rem;
-        }
+## Prerequisites
 
-        section h2 {
-            color: #0077b6;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 0.5rem;
-        }
+Before you begin, ensure you have met the following requirements:
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-        ul li {
-            margin: 0.5rem 0;
-        }
+## Installing vCard
 
-        a {
-            color: #0077b6;
-            text-decoration: none;
-        }
+To install **vCard**, follow these steps:
 
-        a:hover {
-            text-decoration: underline;
-        }
+Linux and macOS:
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
+```bash
+sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+```
 
-        footer p {
-            margin: 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>📈 Data Engineer | Dominando Dados Complexos</h1>
-        <p>Bem-vindo ao meu portfólio!</p>
-    </header>
+Windows:
 
-    <main>
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p>Sou um Engenheiro de Dados com experiência em manipulação, análise e modelagem de grandes volumes de dados. Apaixonado por resolver desafios complexos, utilizando ferramentas e tecnologias modernas como SQL, Power BI e a arquitetura na nuvem.</p>
-        </section>
+```bash
+git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+```
 
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <ul>
-                <li><a href="#">🔗 Projeto Power BI: Modelagem e Visualizações Impactantes</a></li>
-                <li><a href="#">🔗 Pipeline de Dados com Apache Spark</a></li>
-                <li><a href="#">🔗 Automação de ETL com Python</a></li>
-            </ul>
-        </section>
+## Contact
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato comigo por meio das redes abaixo:</p>
-            <ul>
-                <li><a href="https://github.com/SeuUsuario">GitHub</a></li>
-                <li><a href="mailto:seuemail@exemplo.com">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/seuperfil">LinkedIn</a></li>
-            </ul>
-        </section>
-    </main>
+If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
 
-    <footer>
-        <p>&copy; 2024 - Seu Nome | Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+## License
+
+MIT
