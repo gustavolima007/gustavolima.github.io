@@ -1,201 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Lima - Engenheiro de Dados</title>
-    <link rel="shortcut icon" href="./website-image/perfil.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Gustavo Lima - Data Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<!-- - #MAIN -->
-<main>
-
-    <!-- - #SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-            <figure class="avatar-box">
-                <img src="./assets/images/my-avatar.png" alt="Gustavo Lima" width="80">
-            </figure>
-            <div class="info-content">
-                <h1 class="name" title="Gustavo Lima">Gustavo Lima</h1>
-                <p class="title">Engenheiro de Dados</p>
-            </div>
-            <button class="info_more-btn" data-sidebar-btn>
-                <span>Mostrar Contatos</span>
-                <ion-icon name="chevron-down"></ion-icon>
-            </button>
-        </div>
-        <div class="sidebar-info_more">
-            <div class="separator"></div>
-            <ul class="contacts-list">
-                <li class="contact-item">
-                    <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
-                    <div class="contact-info">
-                        <p class="contact-title">Email</p>
-                        <a href="mailto:adm.gustavo.lima@live.com" class="contact-link">adm.gustavo.lima@live.com</a>
-                    </div>
-                </li>
-                <li class="contact-item">
-                    <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
-                    <div class="contact-info">
-                        <p class="contact-title">Telefone</p>
-                        <a href="tel:+551199999999" class="contact-link">+55 (11) 99999-9999</a>
-                    </div>
-                </li>
-                <li class="contact-item">
-                    <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
-                    <div class="contact-info">
-                        <p class="contact-title">Localização</p>
-                        <address>Campinas, São Paulo, Brasil</address>
-                    </div>
-                </li>
-            </ul>
-            <div class="separator"></div>
-            <ul class="social-list">
-                <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
-            </ul>
-        </div>
+    <!-- Sidebar -->
+    <aside>
+        <img src="profile.jpg" alt="Gustavo Lima" class="profile-img">
+        <h1>Gustavo Lima</h1>
+        <p>Data Engineer | Google Cloud | Oracle SQL | Fabric Specialist</p>
+        <ul class="contact-info">
+            <li>Email: <a href="mailto:adm.gustavo.lima@live.com">adm.gustavo.lima@live.com</a></li>
+            <li>Phone: +55 (19) 99547-7044</li>
+            <li>Location: Campinas, São Paulo, Brazil</li>
+        </ul>
     </aside>
 
-    <!-- - #main-content -->
-    <div class="main-content">
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- - #NAVBAR -->
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="navbar-item"><button class="navbar-link active" data-nav-link>Sobre</button></li>
-                <li class="navbar-item"><button class="navbar-link" data-nav-link>Resumo</button></li>
-                <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfólio</button></li>
-                <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
-                <li class="navbar-item"><button class="navbar-link" data-nav-link>Contato</button></li>
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Turning data into insights with scalable and efficient solutions. Currently exploring advanced GCP services and pursuing a Fabric certification. 
+                My passion lies in mastering real-time data solutions and creating impactful data pipelines.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Key Skills</h2>
+            <ul>
+                <li><strong>Data Orchestration:</strong> Microsoft Fabric, Azure Data Factory</li>
+                <li><strong>Cloud Platforms:</strong> Google Cloud Platform (GCP), BigQuery</li>
+                <li><strong>Databases:</strong> Oracle SQL, PL/SQL</li>
+                <li><strong>Programming:</strong> Python (APIs, Automation)</li>
             </ul>
-        </nav>
+        </section>
 
-        <!-- - #ABOUT -->
-        <article class="about active" data-page='about'>
-            <header><h2>Sobre Mim</h2></header>
-            <section class='about-text'>
-                <p>✨ Transformando dados em insights. Sou um Engenheiro de Dados apaixonado por soluções em tempo real e otimização de processos. Atualmente, estou aprendendo serviços avançados do GCP e buscando certificação em Fabric.</p>
-                <p>🎯 Objetivos: Dominar soluções de dados em tempo real e expandir minha expertise em engenharia de dados.</p>
-                <p>🎲 Fato curioso: Adoro otimizar consultas SQL complexas!</p>
-            </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <article>
+                <h3>Interactive Dashboard</h3>
+                <a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiMDY2YzRhZjEtNzM3MS00NGI1LTlmNzQtNTQyM2UzNzk0NzNlIiwidCI6Ijg2YjZlZTBkLTFkZWItNGFlMS05ZmU2LWY3ODJkYmMzNmY3ZiJ9" target="_blank">
+                    <img src="dashboard-preview.png" alt="Interactive Dashboard">
+                </a>
+                <p>Created a scalable and efficient dashboard using Microsoft Fabric for data insights and visualization.</p>
+            </article>
+        </section>
 
-        </article>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://formsubmit.co/adm.gustavo.lima@live.com" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
 
-        <!-- - #RESUME -->
-        <article class='resume' data-page='resume'>
-            <header><h2>Resumo Profissional</h2></header>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
 
-            <!-- Educação -->
-            <section class='education'>
-                <h3>Educação</h3>
-                <ol class='timeline-list'>
-                    <li><strong>Bacharel em Ciência da Computação</strong>, Universidade Estadual de Campinas (UNICAMP) - 2015 a 2019</li>
-                    <li><strong>Pós-graduação em Engenharia de Dados</strong>, PUC Campinas - 2020 a 2021</li>
-                </ol>
-            </section>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-            <!-- Experiência Profissional -->
-            <section class='experience-professional'>
-                <h3>Experiência Profissional</h3>
-                <ol class='timeline-list'>
-                    <li><strong>Engenheiro de Dados Sênior</strong>, Empresa XYZ - 2021 até o presente
-                        - Implementação e manutenção de pipelines de dados em larga escala.
-                        - Colaboração com equipes multidisciplinares para otimizar processos analíticos.
-                    </li>
-
-                    <li><strong>Engenheiro de Dados Júnior</strong>, Empresa ABC - 2019 a 2021
-                        - Desenvolvimento e manutenção de soluções em nuvem usando GCP.
-                        - Criação de relatórios e dashboards para visualização de dados.
-                    </li>
-
-                </ol>
-            </section>
-
-            <!-- Habilidades -->
-            <section class='skills'>
-                <h3>Minhas Habilidades</h3>
-                <ul style='list-style-type: none;'>
-                    <!-- Adicione suas habilidades aqui com porcentagens ou descrições -->
-                    <li><strong>SQL:</strong> 90%</li>
-                    <li><strong>Pandas:</strong> 80%</li>
-                    <li><strong>AWS:</strong> 70%</li>
-                    <!-- Adicione mais habilidades conforme necessário -->
-                </ul>
-            </section>
-
-        </article>
-
-        <!-- - #PORTFOLIO -->
-        <article class='portfolio' data-page='portfolio'>
-            <header><h2>Portfólio</h2></header>
-
-            <!-- Projetos -->
-            <!-- Aqui você pode adicionar links para seus projetos -->
-            <!-- Exemplo de projeto -->
-            <section class='projects'>
-                <!-- Adicione seus projetos aqui -->
-                <!-- Exemplo de projeto -->
-                [![Dashboard Interativo](./microsoft-fabric-journey.png)](https://app.fabric.microsoft.com/view?r=eyJrIjoiMDY2YzRhZjEtNzM3MS00NGI1LTlmNzQtNTQyM2UzNzk0NzNlIiwidCI6Ijg2YjZlZTBkLTFkZWItNGFlMS05ZmU2LWY3ODJkYmMzNmY3ZiJ9)
-                
-                <!-- Adicione mais projetos conforme necessário -->
-            </section>
-
-        </article>
-
-        <!-- - #BLOG -->
-        <!-- Seção Blog pode ser adicionada aqui -->
-        <!-- Exemplo simples para blog -->
-        <article data-page='blog'>
-            <header><h2>Blog</h2></header>
-            <!-- Exemplo de post do blog -->
-            Aqui você pode compartilhar suas experiências, dicas e tutoriais sobre engenharia de dados, SQL, GCP e muito mais!
-        </article>
-
-        <!-- - #CONTATO -->
-        <!-- Seção Contato -->
-        <article data-page='contact'>
-            <header><h2>Vamos nos Conectar!</h2></header>
-
-            <!-- Formulário de Contato -->
-            Você pode me encontrar nas redes sociais ou entrar em contato diretamente através do formulário abaixo:
-            
-            <!-- Formulário simples para contato -->
-            <form action="#" method='post'>
-                <!-- Nome -->
-                Nome:<br/>
-                <input type='text' required/><br/>
-
-                <!-- Email -->
-                Email:<br/>
-                <input type='email' required/><br/>
-
-                <!-- Mensagem -->
-                Mensagem:<br/>
-                <textarea rows='4' required></textarea><br/>
-
-                <!-- Botão Enviar -->
-                Enviar Mensagem<br/>
-                [<input type='submit' value='Enviar'/>]
-                
+                <button type="submit">Send Message</button>
             </form>
+        </section>
+    </main>
 
-        </article>
-
-    </div>
-
-</main>
-
-<script src="./assets/js/script.js"></script> 
-<!-- Adicione seu JavaScript aqui -->
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gustavo Lima. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
-
