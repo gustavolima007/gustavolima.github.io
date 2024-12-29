@@ -33,18 +33,19 @@
       <aside class="sidebar" data-sidebar>
          <div class="sidebar-info">
             <figure class="avatar-box">
-               <!--<img src="./assets/images/my-avatar.png" alt="Gustavo Lima" width="80">-->
                <img src="./assets/images/Perfil_redondo.png" alt="Gustavo Lima" width="80">
             </figure>
             <div class="info-content">
                <h1 class="name" title="Gustavo Lima">Gustavo Lima</h1>
                <p class="title">Data Engineer</p>
             </div>
-            <button class="info_more-btn" data-sidebar-btn>
+
+            <button class="info_more-btn" data-sidebar-btn onclick="toggleContacts()">
                <span>Show Contacts</span>
                <ion-icon name="chevron-down"></ion-icon>
             </button>
          </div>
+
          <div class="sidebar-info_more">
             <div class="separator"></div>
             <ul class="contacts-list">
@@ -91,6 +92,9 @@
             </ul>
          </div>
       </aside>
+
+
+
       <!--
          - #main-content
          -->
@@ -524,13 +528,13 @@
                      <button class="active" data-filter-btn>All</button>
                   </li>
                   <li class="filter-item">
-                     <button data-filter-btn>Web design</button>
+                     <button data-filter-btn>Microsoft Fabric</button>
                   </li>
                   <li class="filter-item">
-                     <button data-filter-btn>Applications</button>
+                     <button data-filter-btn>Google Cloud (GCP)</button>
                   </li>
                   <li class="filter-item">
-                     <button data-filter-btn>Web development</button>
+                     <button data-filter-btn>Power BI</button>
                   </li>
                </ul>
                <div class="filter-select-box">
@@ -782,6 +786,7 @@
          - custom js link
          -->
    <script src="./assets/js/script.js"></script>
+   <script src="./assets/js/contacts.js"></script>
    <!--
          - ionicon link
          -->
