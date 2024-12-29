@@ -157,3 +157,139 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+// Função para rolar suavemente até um elemento específico
+const scrollToElement = (selector, offset = 0) => {
+  const element = document.querySelector(selector);
+  if (element) {
+    const top = element.offsetTop + offset;
+    window.scrollTo({
+      top: top,
+      behavior: "smooth"
+    });
+  }
+};
+
+
+// Lazy Loading de Imagens e Iframes
+// Esse script adia o carregamento de imagens e iframes até que estejam próximos de serem exibidos
+
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyLoad = () => {
+    const lazyElements = document.querySelectorAll("img[data-src], iframe[data-src]");
+    const windowHeight = window.innerHeight;
+
+    lazyElements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < windowHeight + 200) {
+        if (element.dataset.src) {
+          element.src = element.dataset.src;
+          element.removeAttribute("data-src");
+        }
+      }
+    });
+  };
+
+  window.addEventListener("scroll", lazyLoad);
+  window.addEventListener("resize", lazyLoad);
+  lazyLoad(); // Executa ao carregar a página
+});
+
+
+// Animações Suaves ao Rolagem (Smooth Scroll)
+// Adiciona uma experiência fluida ao rolar para links âncora.
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    });
+  });
+});
+
+
+//Minimizar a Re-renderização com requestAnimationFrame
+
+let ticking = false;
+
+const optimizeScroll = () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      // Insira aqui a lógica que deve ocorrer durante o scroll
+      console.log("Scrolling...");
+      ticking = false;
+    });
+    ticking = true;
+  }
+};
+
+window.addEventListener("scroll", optimizeScroll);
+
+
+// Preloader Simples
+document.addEventListener("DOMContentLoaded", function () {
+  const preloader = document.createElement("div");
+  preloader.id = "preloader";
+  preloader.style = `
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: #fff url('spinner.gif') no-repeat center center;
+    z-index: 9999;
+  `;
+  document.body.appendChild(preloader);
+
+  window.addEventListener("load", () => {
+    preloader.style.opacity = "0";
+    setTimeout(() => preloader.remove(), 500);
+  });
+});
+
+
+// Script para Melhorar Performance (Debounce e Throttle)
+
+const debounce = (func, delay) => {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), delay);
+  };
+};
+
+window.addEventListener("resize", debounce(() => {
+  console.log("Resize otimizado!");
+}, 200));
+
+const throttle = (func, limit) => {
+  let lastFunc;
+  let lastRan;
+  return (...args) => {
+    const context = this;
+    if (!lastRan) {
+      func.apply(context, args);
+      lastRan = Date.now();
+    } else {
+      clearTimeout(lastFunc);
+      lastFunc = setTimeout(() => {
+        if (Date.now() - lastRan >= limit) {
+          func.apply(context, args);
+          lastRan = Date.now();
+        }
+      }, limit - (Date.now() - lastRan));
+    }
+  };
+};
+
+window.addEventListener("scroll", throttle(() => {
+  console.log("Scroll otimizado!");
+}, 200));
