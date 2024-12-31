@@ -14,7 +14,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Gustavo Lima</title>
+  <title>Projetos - Gustavo Lima</title>
   <!--
          - favicon
          -->
@@ -36,6 +36,20 @@
          - #MAIN
          -->
   <main>
+           <!--
+          FUNCIONALIDADE DO MENU
+        -->
+        <div class="overlay" data-overlay></div>
+        <section class="testimonials-modal">
+          <button class="modal-close-btn" data-modal-close-btn>
+          </button>
+          <div class="modal-content">
+            <div data-modal-text>
+            </div>
+          </div>
+        </section>
+        
+
     <!--
          - #SIDEBAR
          -->
@@ -49,7 +63,7 @@
           <p class="title">Data Engineer</p>
         </div>
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span>Info</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
       </div>
@@ -123,91 +137,69 @@
         </ul>
       </nav>
       <!--
-         - #ABOUT
+         - #SOBRE
          -->
-      <article class="about  active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        <section class="about-text">
-          <p> ✨ Turning data into insights. </p>
-          <p> 📚 Currently learning advanced GCP services and pursuing Fabric certification. </p>
-          <p> 🎯 Goals: Master real-time data solutions and expand my expertise in data engineering. </p>
-          <p> 🎲 Fun fact: I love optimizing complex SQL queries! </p>
-          <p> 🚀 Data Engineer | Google Cloud | Oracle SQL | Fabric Specialist </p>
-        </section>
-        <!--
-            - service
-            -->
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/logo-1-color.png" alt="Microsoft Fabric" width="80">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-                <p class="service-item-text"> The most modern and high-quality design made at a professional level. </p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/logo-2-color.jpg" alt="Web development icon" width="80">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-                <p class="service-item-text"> High-quality development of sites at the professional level. </p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-                <p class="service-item-text"> Professional development of applications for iOS and Android. </p>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-                <p class="service-item-text"> I make high-quality photos of any category at a professional level. </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!--
-            - testimonials modal
-            -->
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-              <time datetime="2021-06-14">14 June, 2021</time>
-              <div data-modal-text>
-                <p> Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
-                  ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore
-                  magnarels alia. </p>
-              </div>
-            </div>
+         <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">Sobre mim</h2>
+          </header>
+          <section class="about-text">
+            <p> ✨ Transformando dados em insights. </p>
+            <p> 📚 Atualmente aprendendo serviços avançados do GCP e buscando certificação Fabric. </p>
+            <p> 🎯 Metas: Dominar soluções de dados em tempo real e expandir minha expertise em engenharia de dados. </p>
+            <p> 🎲 Curiosidade: Amo otimizar consultas SQL complexas! </p>
+            <p> 🚀 Engenheiro de Dados | Google Cloud | Oracle SQL | Especialista em Fabric </p>
           </section>
-        </div>
+          <!--
+        - serviços
+        -->
+          <section class="service">
+            <h3 class="h3 service-title">O que eu faço</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/logo-1-color.png" alt="Microsoft Fabric" width="80">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Microsoft Fabric</h4>
+                  <p class="service-item-text"> O design mais moderno e de alta qualidade feito em nível profissional.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/logo-2-color.jpg" alt="Power BI" width="80">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Power BI</h4>
+                  <p class="service-item-text"> Desenvolvimento de dashboards de alta qualidade em nível profissional.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-app.svg" alt="ícone de Python" width="40">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Python</h4>
+                  <p class="service-item-text"> Desenvolvimento profissional de soluções automatizadas e análise de dados.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-photo.svg" alt="ícone de Google Cloud" width="40">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Google Cloud</h4>
+                  <p class="service-item-text"> Implementação de soluções na nuvem com alta qualidade e eficiência. </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+  
+
+        
       </article>
 
       <!--
@@ -363,7 +355,7 @@
          -->
       <article class="portfolio" data-page="portfolio">
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projetos_GL</h2>
         </header>
         <section class="projects">
           <ul class="filter-list">

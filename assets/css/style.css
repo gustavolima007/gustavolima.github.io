@@ -923,7 +923,7 @@ main {
 }
 
 /*-----------------------------------*\
-	#PORTFOLIO
+	#Projetos_GL
   \*-----------------------------------*/
 
 .filter-list {
@@ -1336,7 +1336,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   /**
-	 * #PORTFOLIO, BLOG 
+	 * #Projetos_GL, BLOG 
 	 */
 
   .project-img,
@@ -1622,7 +1622,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   /**
-	 * #PORTFOLIO, BLOG
+	 * #Projetos_GL, BLOG
 	 */
 
   .project-img,
@@ -1721,7 +1721,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   /**
-	 * PORTFOLIO
+	 * Projetos_GL
 	 */
 
   .article-title {
@@ -1755,7 +1755,7 @@ textarea.form-input::-webkit-resizer {
     color: var(--orange-yellow-crayola);
   }
 
-  /* portfolio and blog grid */
+  /* Projetos_GL and blog grid */
 
   .project-list,
   .blog-posts-list {
@@ -1868,7 +1868,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   /**
-	 * PORTFOLIO
+	 * Projetos_GL
 	 */
 
   .project-list {
