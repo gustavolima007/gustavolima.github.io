@@ -293,3 +293,34 @@ const throttle = (func, limit) => {
 window.addEventListener("scroll", throttle(() => {
   console.log("Scroll otimizado!");
 }, 200));
+
+
+// Gerenciamento de Estados do Usuário
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    console.log("Página está oculta");
+    // Pausar animações ou outros processos
+  } else {
+    console.log("Página visível novamente");
+    // Retomar atividades pausadas
+  }
+});
+
+// Cache Dinâmico com Service Worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then((registration) => {
+    console.log('Service Worker registrado:', registration);
+  });
+}
+
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open('v1').then((cache) => cache.addAll(['/index.html', '/styles.css', '/script.js']))
+  );
+});
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => response || fetch(event.request))
+  );
+});
+

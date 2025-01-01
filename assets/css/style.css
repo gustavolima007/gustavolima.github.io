@@ -317,27 +317,27 @@ main {
   min-width: 259px;
 }
 
-/*-----------------------------------*\
-	#SIDEBAR
-  \*-----------------------------------*/
-
+/* SIDEBAR */
 .sidebar {
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* Ajuste único */
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
 .sidebar.active {
-  max-height: 405px;
+  max-height: 405px; /* Ajuste para o estado ativo */
 }
 
 .sidebar-info {
-  position: relative;
+  position: sticky; /* Faz o elemento "grudar" no topo */
+  top: 0; /* Fixa no topo da sidebar */
+  z-index: 10; /* Garante que fique acima de outros elementos */
+  padding: 10px; /* Espaçamento interno */
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 20px; /* Espaçamento entre os itens */
 }
 
 .avatar-box {
@@ -1692,11 +1692,31 @@ textarea.form-input::-webkit-resizer {
 	 * SIDEBAR
 	 */
 
-  .contacts-list {
+   .contacts-list {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px 15px;
+    gap: 20px 15px; /* Espaçamento ajustado */
+    padding: 10px; /* Adicione espaço interno se necessário */
+    list-style: none; /* Remova marcadores padrão */
   }
 
+  @media (max-width: 768px) {
+    .sidebar {
+      max-height: 200px; /* Ajuste para telas menores */
+    }
+  
+    .sidebar.active {
+      max-height: 300px; /* Ajuste ativo */
+    }
+  
+   
+    .contacts-list {
+      grid-template-columns: 1fr; /* Alinhe os itens em uma coluna */
+      gap: 15px; /* Reduza o espaçamento */
+    }
+  }
+
+  
   /**
 	 * NAVBAR
 	 */
@@ -2013,6 +2033,40 @@ textarea.form-input::-webkit-resizer {
     justify-content: center;
   }
 
+  .sidebar {
+    height: 100%;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .sidebar.active {
+    height: 100%;
+  }
+  
+  .sidebar {
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .sidebar {
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .sidebar:hover {
+    border-color: var(--highlight-color);
+  }
+  
+  .sidebar-info {
+    cursor: pointer; /* Adicione se for clicável */
+  }
+  
+  .contacts-list li:hover {
+    background-color: var(--hover-bg-color);
+    border-radius: 5px;
+  }
+  
+
   /**
 	   * RESUME
 	   */
@@ -2020,4 +2074,17 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
+}
+
+
+/* Animações Baseadas em GPU */
+
+.animated {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  transform: translateY(20px);
+  opacity: 0;
+}
+.animated.show {
+  transform: translateY(0);
+  opacity: 1;
 }
