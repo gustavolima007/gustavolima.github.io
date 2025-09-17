@@ -1,0 +1,52 @@
+.sidebar {
+  display: none;
+}
+
+main {
+  display: block !important;
+}
+
+.main-content {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+.profile {
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.profile .sidebar-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile .avatar-box {
+  background: var(--bg-gradient-onyx);
+  border-radius: 20px;
+}
+
+.profile .info-content .name {
+  color: var(--white-2);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-500);
+  letter-spacing: -0.25px;
+  margin-bottom: 10px;
+}
+
+.profile .info-content .title {
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+}
