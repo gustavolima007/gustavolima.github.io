@@ -14,6 +14,9 @@ layout: default
       <button class="navbar-link" data-nav-link>Portfólio</button>
     </li>
     <li class="navbar-item">
+      <button class="navbar-link" data-nav-link>Blog</button>
+    </li>
+    <li class="navbar-item">
       <button class="navbar-link" data-nav-link>Contato</button>
     </li>
   </ul>
@@ -22,4 +25,5 @@ layout: default
 {% include about.html %}
 {% include resume.html %}
 {% include portfolio.html %}
+{% include blog.html %}
 {% include contact.html %}

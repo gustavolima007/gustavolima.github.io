@@ -81,7 +81,7 @@ main { margin: 15px 12px; margin-bottom: 75px; min-width: 259px; }
 
 .sidebar.active { max-height: 584px; /* Ajuste para o estado ativo */ }
 
-.sidebar-info { position: sticky; /* Faz o elemento "grudar" no topo */ top: 0; /* Fixa no topo da sidebar */ z-index: 10; /* Garante que fique acima de outros elementos */ padding: 10px; /* Espaçamento interno */ display: flex; justify-content: flex-start; align-items: center; gap: 20px; /* Espaçamento entre os itens */ }
+.sidebar-info { padding: 10px; /* Espaçamento interno */ display: flex; justify-content: flex-start; align-items: center; gap: 20px; /* Espaçamento entre os itens */ }
 
 .avatar-box { background: var(--bg-gradient-onyx); border-radius: 20px; }
 
